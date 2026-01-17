@@ -11,7 +11,6 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 const STORAGE_KEY = 'resume_language';
-const LANGUAGE_SELECTED_KEY = 'resume_language_selected';
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>(() => {

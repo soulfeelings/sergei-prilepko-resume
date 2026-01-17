@@ -11,8 +11,6 @@ export const Experience = () => {
       <h2 className="experience__title">{data.sections.experience}</h2>
       <div className="experience__list">
         {data.experience.map((item, index) => {
-          const itemId = `exp-${index}`;
-          
           // Проверяем, все ли описания отмечены
           const allDescriptionsChecked = item.description.every((_, idx) => {
             const descId = `exp-${index}-desc-${idx}`;

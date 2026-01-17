@@ -63,11 +63,7 @@ export const QuestFlow = () => {
   const getStepContent = () => {
     switch (currentStep) {
       case 'intro':
-        return {
-          title: t('intro'),
-          content: null,
-          type: 'intro' as const
-        };
+        return null;
       case 'about':
         return {
           title: data.sections.about,
@@ -98,6 +94,8 @@ export const QuestFlow = () => {
           content: data.contacts,
           type: 'contacts' as const
         };
+      case 'complete':
+        return null;
       default:
         return null;
     }
