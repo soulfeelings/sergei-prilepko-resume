@@ -1,0 +1,43 @@
+.contacts {
+  margin-bottom: 1.5rem;
+}
+
+.contacts__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contacts__item {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.contacts__link {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contacts__link:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.contacts__item strong {
+  color: #333;
+  margin-right: 0.25rem;
+}

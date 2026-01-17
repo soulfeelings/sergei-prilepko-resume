@@ -1,0 +1,38 @@
+.tech-stack {
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tech-stack__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tech-stack__category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tech-stack__category-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.tech-stack__items {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+}
