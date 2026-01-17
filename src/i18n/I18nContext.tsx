@@ -11,11 +11,27 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 const STORAGE_KEY = 'resume_language';
+const LANGUAGE_SELECTED_KEY = 'resume_language_selected';
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    return (saved === 'ru' || saved === 'en') ? saved : 'ru';
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) return 'en';
+      
+      // Если это JSON строка, пытаемся распарсить
+      let parsed: string;
+      if (saved.startsWith('{') || saved.startsWith('[')) {
+        const json = JSON.parse(saved);
+        parsed = typeof json === 'string' ? json : (json.language || json.lang || saved);
+      } else {
+        parsed = saved;
+      }
+      
+      return (parsed === 'ru' || parsed === 'en') ? parsed : 'en';
+    } catch {
+      return 'en';
+    }
   });
 
   useEffect(() => {

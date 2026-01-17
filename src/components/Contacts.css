@@ -11,6 +11,20 @@
   letter-spacing: 0.5px;
 }
 
+.contacts__container {
+  position: relative;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__wrapper--blurred {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
 .contacts__list {
   list-style: none;
   padding: 0;
@@ -20,10 +34,50 @@
   gap: 0.5rem;
 }
 
+.contacts__message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  font-weight: 600;
+  border: 2px solid #FFDD2D;
+}
+
 .contacts__item {
   font-size: 0.9rem;
   line-height: 1.5;
   color: #444;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.contacts__item--checked {
+  background-color: #FFFBE6;
+  border-left: 4px solid #FFDD2D;
+}
+
+.contacts__checkbox-label {
+  display: flex;
+  gap: 0.75rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.contacts__checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #FFDD2D;
+  flex-shrink: 0;
 }
 
 .contacts__link {

@@ -6,6 +6,7 @@ export const Header = () => {
 
   return (
     <header className="header">
+      <img src={`${import.meta.env.BASE_URL}photo.jpeg`} alt={data.name} className="header__photo" />
       <h1 className="header__name">{data.name}</h1>
       <h2 className="header__position">{data.position}</h2>
     </header>

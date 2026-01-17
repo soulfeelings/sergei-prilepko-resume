@@ -2,7 +2,14 @@
   min-height: 100vh;
   background-color: #f5f5f5;
   padding: 2rem;
+  padding-bottom: 6rem;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding-bottom: 9rem;
+  }
 }
 
 .app__container {
@@ -44,6 +51,7 @@
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
+    padding-bottom: 8rem;
   }
 
   .app__container {

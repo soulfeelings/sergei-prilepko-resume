@@ -1,0 +1,74 @@
+.welcome-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+}
+
+.welcome-screen__content {
+  text-align: center;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.welcome-screen__name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-screen__greeting {
+  font-size: 1.5rem;
+  margin: 0 0 2.5rem 0;
+  opacity: 0.95;
+}
+
+.welcome-screen__button {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #667eea;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-screen__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-screen__button:active {
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-screen__name {
+    font-size: 2.5rem;
+  }
+
+  .welcome-screen__greeting {
+    font-size: 1.2rem;
+  }
+
+  .welcome-screen__button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}

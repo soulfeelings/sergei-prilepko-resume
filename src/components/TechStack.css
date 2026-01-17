@@ -21,6 +21,45 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  transition: background-color 0.3s ease, border-left 0.3s ease;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 4px solid transparent;
+}
+
+.tech-stack__category:hover {
+  background-color: #FFF9E6;
+}
+
+.tech-stack__category--checked {
+  background-color: #FFFBE6;
+  border-left: 4px solid #FFDD2D;
+}
+
+.tech-stack__checkbox-label {
+  display: flex;
+  gap: 0.75rem;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.tech-stack__checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 0.1rem;
+  accent-color: #FFDD2D;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.tech-stack__checkbox:active {
+  transform: scale(0.85);
+}
+
+.tech-stack__checkbox-label:hover .tech-stack__checkbox {
+  transform: scale(1.1);
 }
 
 .tech-stack__category-title {

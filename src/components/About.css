@@ -1,5 +1,44 @@
 .about {
   margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease, padding 0.3s ease, border-left 0.3s ease;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+}
+
+.about--checked {
+  background-color: #FFFBE6;
+  padding: 1.5rem;
+  border-left: 4px solid #FFDD2D;
+}
+
+.about__checkbox-label {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.about__checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  accent-color: #FFDD2D;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.about__checkbox:active {
+  transform: scale(0.85);
+}
+
+.about__checkbox-label:hover .about__checkbox {
+  transform: scale(1.1);
+}
+
+.about__content {
+  flex: 1;
 }
 
 .about__title {

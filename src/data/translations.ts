@@ -1,5 +1,3 @@
-import { ResumeData } from '../types/resume';
-
 export const translations = {
   ru: {
     name: 'Sergey Prilepko',
@@ -11,17 +9,29 @@ export const translations = {
       goals: 'КРАТКОСРОЧНЫЕ ЦЕЛИ',
       contacts: 'КОНТАКТЫ',
       experience: 'ОПЫТ РАБОТЫ – 7 лет',
-      technologies: 'Технологии'
+      technologies: 'Технологии',
+      projects: 'ПОСЛЕДНИЕ ПРОЕКТЫ'
     },
     techStack: {
       frontend: ['React', 'Redux', 'Effector', 'Mobx', 'HTML', 'CSS', 'SASS', 'CSS in JS', 'styled-components', 'Tailwind'],
-      backend: ['Python', 'FastAPI', 'Node', 'Express', 'Postgres'],
+      backend: ['Python', 'Go', 'FastAPI', 'Node', 'Express', 'Postgres'],
       testing: ['Jest', 'Cypress'],
       design: ['Figma'],
       other: ['Git', 'GitHub', 'Gitlab', 'Cursor', 'ChatGPT']
     },
     goals: ['Изучить Solidity'],
-    contacts: [
+    projects: [
+      { name: 'Liberandum.ai', url: 'https://liberandum.ai/', role: 'Лид фронтенд разработки' },
+      { name: 'ZeusTrade', url: 'https://app.zeustrade.io/', role: 'Фронтенд тимлид' },
+      { name: 'Box4Baby', url: 'https://box4baby.uz/', role: 'Фулстек тимлид' }
+    ],
+    toasts: {
+      reviewers: 'Еще 4 ревьюера просматривают это резюме в данный момент'
+    },
+    contacts: {
+      unlockMessage: 'Контакты откроются после победы! 🎉'
+    },
+    contactsList: [
       { type: 'Email', value: 'sergey.prilepko@gmail.com', link: 'mailto:sergey.prilepko@gmail.com' },
       { type: 'Телефон', value: '+7 999 668-33-27', link: 'tel:+79996683327' },
       { type: 'Telegram', value: '@TheLABL', link: 'https://t.me/thelabl' },
@@ -37,6 +47,7 @@ export const translations = {
         technologies: ['React', 'TypeScript', 'Python', 'NodeJS'],
         description: [
           'Самостоятельно разработал и запустил full-stack сервис аренды игрушек для клиента (frontend, backend, CI/CD DevOps pipelines).',
+          'Разработал фулстек веб приложение для продажи объектов недвижимости в Дубае (конкуренты Альнаира).',
           'Участвовал в проекте крипто-игры Mortal Coin.',
           'Работал над крипто-биржей (под NDA).',
           'Создал backend для приложения AI-Chef.',
@@ -103,17 +114,29 @@ export const translations = {
       goals: 'SHORT-TERM GOALS',
       contacts: 'CONTACTS',
       experience: 'WORK EXPERIENCE – 7 years',
-      technologies: 'Technologies'
+      technologies: 'Technologies',
+      projects: 'LATEST PROJECTS'
     },
     techStack: {
       frontend: ['React', 'Redux', 'Effector', 'Mobx', 'HTML', 'CSS', 'SASS', 'CSS in JS', 'styled-components', 'Tailwind'],
-      backend: ['Python', 'FastAPI', 'Node', 'Express', 'Postgres'],
+      backend: ['Python', 'Go', 'FastAPI', 'Node', 'Express', 'Postgres'],
       testing: ['Jest', 'Cypress'],
       design: ['Figma'],
       other: ['Git', 'GitHub', 'Gitlab', 'Cursor', 'ChatGPT']
     },
     goals: ['Learn Solidity'],
-    contacts: [
+    projects: [
+      { name: 'Liberandum.ai', url: 'https://liberandum.ai/', role: 'Frontend Development Lead' },
+      { name: 'ZeusTrade', url: 'https://app.zeustrade.io/', role: 'Frontend Team Lead' },
+      { name: 'Box4Baby', url: 'https://box4baby.uz/', role: 'Full Stack Team Lead' }
+    ],
+    toasts: {
+      reviewers: '4 more reviewers are viewing this resume right now'
+    },
+    contacts: {
+      unlockMessage: 'Contacts will unlock after victory! 🎉'
+    },
+    contactsList: [
       { type: 'Email', value: 'sergey.prilepko@gmail.com', link: 'mailto:sergey.prilepko@gmail.com' },
       { type: 'Phone', value: '+7 999 668-33-27', link: 'tel:+79996683327' },
       { type: 'Telegram', value: '@TheLABL', link: 'https://t.me/thelabl' },
@@ -129,6 +152,7 @@ export const translations = {
         technologies: ['React', 'TypeScript', 'Python', 'NodeJS'],
         description: [
           'Independently developed and delivered a full-stack toy rental service for a client (frontend, backend, CI/CD DevOps pipelines).',
+          'Developed a fullstack web application for real estate sales in Dubai (competitors of Alnair).',
           'Participated in a crypto game project Mortal Coin.',
           'Worked on a crypto-exchange app (under NDA).',
           'Built backend for the AI-Chef application.',

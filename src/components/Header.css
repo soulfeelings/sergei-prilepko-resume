@@ -4,6 +4,16 @@
   border-bottom: 2px solid #333;
 }
 
+.header__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  display: block;
+  border: 3px solid #FFDD2D;
+}
+
 .header__name {
   font-size: 2rem;
   font-weight: 700;
